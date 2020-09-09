@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CharacterDetailViewController.swift
 //  BreakingBadBluePrint
 //
 //  Created by Meurig Phillips on 09/09/2020.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CharacterDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+    
+
 
 
 }
-
