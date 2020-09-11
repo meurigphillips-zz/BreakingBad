@@ -33,25 +33,25 @@ struct CharacterService {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             DispatchQueue.main.async {
                 guard error == nil else {
-                    print("Failed request from breakingbadapi: \(error!.localizedDescription)")
+                    print("Failed request from \(url): \(error!.localizedDescription)")
                     completion(nil, .failedRequest)
                     return
                 }
                 
                 guard let data = data else {
-                    print("No data returned from breakingbadapi")
+                    print("No data returned from \(url)")
                     completion(nil, .noData)
                     return
                 }
                 
                 guard let response = response as? HTTPURLResponse else {
-                    print("Unable to process breakingbadapi response")
+                    print("Unable to process \(url) response")
                     completion(nil, .invalidResponse)
                     return
                 }
                 
                 guard response.statusCode == 200 else {
-                    print("Failure response from breakingbadapi: \(response.statusCode)")
+                    print("Failure response from \(url): \(response.statusCode)")
                     completion(nil, .failedRequest)
                     return
                 }
@@ -61,7 +61,7 @@ struct CharacterService {
                     let characters: [Character] = try decoder.decode([Character].self, from: data)
                     completion(characters, nil)
                 } catch {
-                    print("Unable to decode breakingbadapi response: \(error.localizedDescription)")
+                    print("Unable to decode \(url) response: \(error.localizedDescription)")
                     completion(nil, .invalidData)
                 }
             }

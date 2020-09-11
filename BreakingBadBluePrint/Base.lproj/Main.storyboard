@@ -7,17 +7,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Characters List View Controller-->
+        <!--Character List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CharactersListViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CharacterListViewController" customModule="BreakingBadBluePrint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-3o-Wxc" customClass="SearchFooter" customModule="BreakingBadBluePrint" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nwY-dp-Mt2"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hLw-mU-fE5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hLw-mU-fE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3eU-6r-Ymm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e3n-3o-Wxc" secondAttribute="bottom" id="PPZ-t4-xSy"/>
+                            <constraint firstItem="e3n-3o-Wxc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PhW-pA-WMU"/>
+                            <constraint firstItem="e3n-3o-Wxc" firstAttribute="top" secondItem="hLw-mU-fE5" secondAttribute="bottom" id="TMN-RI-mBA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hLw-mU-fE5" secondAttribute="trailing" id="UvJ-i4-4G7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3n-3o-Wxc" secondAttribute="trailing" id="dGQ-RQ-LFk"/>
+                            <constraint firstItem="hLw-mU-fE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h5J-ny-fh2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="K9f-7B-EGw"/>
+                    <connections>
+                        <outlet property="searchFooter" destination="e3n-3o-Wxc" id="ly5-cU-9Lf"/>
+                        <outlet property="tableView" destination="hLw-mU-fE5" id="MVO-xn-Jlr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

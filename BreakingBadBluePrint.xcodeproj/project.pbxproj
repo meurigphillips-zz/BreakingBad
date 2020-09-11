@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA313A77FED557C0354DB03 /* Pods_BreakingBadBluePrint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */; };
 		B6AECA24250941E5009675B5 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA23250941E5009675B5 /* CharacterService.swift */; };
+		B6AECA26250A2794009675B5 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */; };
+		B6AECA28250B825C009675B5 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA27250B825C009675B5 /* SearchFooter.swift */; };
 		B6D8959F2509381C000A0E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8959E2509381C000A0E4C /* AppDelegate.swift */; };
 		B6D895A12509381C000A0E4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D895A02509381C000A0E4C /* SceneDelegate.swift */; };
 		B6D895A32509381C000A0E4C /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D895A22509381C000A0E4C /* CharactersListViewController.swift */; };
@@ -21,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadBluePrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		518549247BCBB914F3C010F6 /* Pods-BreakingBadBluePrint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadBluePrint.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint.debug.xcconfig"; sourceTree = "<group>"; };
 		B6AECA23250941E5009675B5 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		B6AECA27250B825C009675B5 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchFooter.swift; path = BreakingBadBluePrint/SearchFooter.swift; sourceTree = SOURCE_ROOT; };
 		B6D8959B2509381C000A0E4C /* BreakingBadBluePrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadBluePrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D8959E2509381C000A0E4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D895A02509381C000A0E4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +41,7 @@
 		B6D895B425093904000A0E4C /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		B6D895B525093904000A0E4C /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		B6D895BB25093CCD000A0E4C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		B80BB3F398B0880942864844 /* Pods-BreakingBadBluePrint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadBluePrint.release.xcconfig"; path = "Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA313A77FED557C0354DB03 /* Pods_BreakingBadBluePrint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14BCE062467F5693E44A0C8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				518549247BCBB914F3C010F6 /* Pods-BreakingBadBluePrint.debug.xcconfig */,
+				B80BB3F398B0880942864844 /* Pods-BreakingBadBluePrint.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B2DF000EEB4D7E39C654207 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6D895922509381C000A0E4C = {
 			isa = PBXGroup;
 			children = (
 				B6D8959D2509381C000A0E4C /* BreakingBadBluePrint */,
 				B6D8959C2509381C000A0E4C /* Products */,
+				14BCE062467F5693E44A0C8E /* Pods */,
+				6B2DF000EEB4D7E39C654207 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +98,7 @@
 				B6D895BA25093CC0000A0E4C /* Model */,
 				B6D895B925093927000A0E4C /* CharacterDetail */,
 				B6D895B825093911000A0E4C /* CharactersList */,
+				B6AECA27250B825C009675B5 /* SearchFooter.swift */,
 				B6D8959E2509381C000A0E4C /* AppDelegate.swift */,
 				B6AECA23250941E5009675B5 /* CharacterService.swift */,
 				B6D895A02509381C000A0E4C /* SceneDelegate.swift */,
@@ -86,6 +116,7 @@
 				B6D895A22509381C000A0E4C /* CharactersListViewController.swift */,
 				B6D895B425093904000A0E4C /* CharacterTableViewCell.swift */,
 				B6D895B525093904000A0E4C /* CharacterTableViewCell.xib */,
+				B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */,
 			);
 			path = CharactersList;
 			sourceTree = "<group>";
@@ -113,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6D895AF2509381E000A0E4C /* Build configuration list for PBXNativeTarget "BreakingBadBluePrint" */;
 			buildPhases = (
+				8B76A0696AD97C3A5663B905 /* [CP] Check Pods Manifest.lock */,
 				B6D895972509381C000A0E4C /* Sources */,
 				B6D895982509381C000A0E4C /* Frameworks */,
 				B6D895992509381C000A0E4C /* Resources */,
+				D1BD520C0A3908388397C76B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +206,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B76A0696AD97C3A5663B905 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakingBadBluePrint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1BD520C0A3908388397C76B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6D895972509381C000A0E4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,6 +257,8 @@
 				B6D895B3250938CC000A0E4C /* CharacterDetailViewController.swift in Sources */,
 				B6AECA24250941E5009675B5 /* CharacterService.swift in Sources */,
 				B6D895B625093904000A0E4C /* CharacterTableViewCell.swift in Sources */,
+				B6AECA28250B825C009675B5 /* SearchFooter.swift in Sources */,
+				B6AECA26250A2794009675B5 /* CharacterListViewModel.swift in Sources */,
 				B6D895BC25093CCD000A0E4C /* Character.swift in Sources */,
 				B6D8959F2509381C000A0E4C /* AppDelegate.swift in Sources */,
 				B6D895A12509381C000A0E4C /* SceneDelegate.swift in Sources */,
@@ -326,6 +403,7 @@
 		};
 		B6D895B02509381E000A0E4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 518549247BCBB914F3C010F6 /* Pods-BreakingBadBluePrint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +422,7 @@
 		};
 		B6D895B12509381E000A0E4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80BB3F398B0880942864844 /* Pods-BreakingBadBluePrint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
