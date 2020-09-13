@@ -7,22 +7,19 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CharacterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var characterImageView: UIImageView!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    func setup(character: Character) {
+        namelabel.text = character.name
+        characterImageView.sd_setImage(with: URL(string: character.img), placeholderImage: UIImage(systemName: "questionmark.diamond"))
+    }
 }

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3EA313A77FED557C0354DB03 /* Pods_BreakingBadBluePrint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */; };
+		B60784CA250E347B00E5A617 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60784C9250E347B00E5A617 /* Box.swift */; };
 		B6AECA24250941E5009675B5 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA23250941E5009675B5 /* CharacterService.swift */; };
 		B6AECA26250A2794009675B5 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */; };
 		B6AECA28250B825C009675B5 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA27250B825C009675B5 /* SearchFooter.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadBluePrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518549247BCBB914F3C010F6 /* Pods-BreakingBadBluePrint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadBluePrint.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint.debug.xcconfig"; sourceTree = "<group>"; };
+		B60784C9250E347B00E5A617 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		B6AECA23250941E5009675B5 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		B6AECA27250B825C009675B5 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchFooter.swift; path = BreakingBadBluePrint/SearchFooter.swift; sourceTree = SOURCE_ROOT; };
@@ -62,7 +64,6 @@
 				518549247BCBB914F3C010F6 /* Pods-BreakingBadBluePrint.debug.xcconfig */,
 				B80BB3F398B0880942864844 /* Pods-BreakingBadBluePrint.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,6 +100,7 @@
 				B6D895B925093927000A0E4C /* CharacterDetail */,
 				B6D895B825093911000A0E4C /* CharactersList */,
 				B6AECA27250B825C009675B5 /* SearchFooter.swift */,
+				B60784C9250E347B00E5A617 /* Box.swift */,
 				B6D8959E2509381C000A0E4C /* AppDelegate.swift */,
 				B6AECA23250941E5009675B5 /* CharacterService.swift */,
 				B6D895A02509381C000A0E4C /* SceneDelegate.swift */,
@@ -262,6 +264,7 @@
 				B6D895BC25093CCD000A0E4C /* Character.swift in Sources */,
 				B6D8959F2509381C000A0E4C /* AppDelegate.swift in Sources */,
 				B6D895A12509381C000A0E4C /* SceneDelegate.swift in Sources */,
+				B60784CA250E347B00E5A617 /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

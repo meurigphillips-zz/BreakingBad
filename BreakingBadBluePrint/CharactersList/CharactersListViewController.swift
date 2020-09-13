@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 class CharacterListViewController: UIViewController {
 
@@ -19,21 +18,25 @@ class CharacterListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CharacterTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        viewModel.displayedCharacters.bind { [weak self] characters in
+            self?.tableView.reloadData()
+        }
     }
     
 }
 
-extension CharacterListViewController: UITableViewDataSource {
+extension CharacterListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.displayedCharacters.count
+        viewModel.displayedCharacters.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? CharacterTableViewCell else { return UITableViewCell() }
-        cell.characterImageView.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "placeholder.png"))
+        cell.setup(character: viewModel.displayedCharacters.value[indexPath.row])
         return cell
     }
-    
-    
 }
 

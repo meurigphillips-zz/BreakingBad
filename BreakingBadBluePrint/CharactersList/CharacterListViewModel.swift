@@ -11,7 +11,7 @@ import Foundation
 class CharacterListViewModel {
     
     var characters = [Character]()
-    var displayedCharacters = [Character]()
+    var displayedCharacters: Box<[Character]> = Box([])
     var filteredSeasons = [Int]()
     
     init() {
@@ -24,7 +24,7 @@ class CharacterListViewModel {
                 let charactersData = charactersData else { return }
             
             self.characters = charactersData
-            self.displayedCharacters = self.characters
+            self.displayedCharacters.value = self.characters
         }
     }
 
