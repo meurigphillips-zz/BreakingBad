@@ -13,7 +13,7 @@ struct Character: Codable {
     let name: String
     let birthday: String
     let occupation: [String]
-    let img: String
+    let imageUrl: String
     let status: String
     let nickname: String
     let appearance: [Int]
@@ -23,8 +23,17 @@ struct Character: Codable {
 
     enum CodingKeys: String, CodingKey {
         case id = "char_id"
-        case name, birthday, occupation, img, status, nickname, appearance, portrayed
+        case name, birthday, occupation, status, nickname, appearance, portrayed
         case featuredShows = "category"
+        case imageUrl = "img"
         case betterCallSaulAppearance = "better_call_saul_appearance"
     }
+}
+
+enum Season: String, CaseIterable {
+    case one = "One"
+    case two = "Two"
+    case three = "Three"
+    case four = "Four"
+    case five = "Five"
 }

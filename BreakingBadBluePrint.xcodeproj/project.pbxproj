@@ -11,7 +11,6 @@
 		B60784CA250E347B00E5A617 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60784C9250E347B00E5A617 /* Box.swift */; };
 		B6AECA24250941E5009675B5 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA23250941E5009675B5 /* CharacterService.swift */; };
 		B6AECA26250A2794009675B5 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */; };
-		B6AECA28250B825C009675B5 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA27250B825C009675B5 /* SearchFooter.swift */; };
 		B6D8959F2509381C000A0E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8959E2509381C000A0E4C /* AppDelegate.swift */; };
 		B6D895A12509381C000A0E4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D895A02509381C000A0E4C /* SceneDelegate.swift */; };
 		B6D895A32509381C000A0E4C /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D895A22509381C000A0E4C /* CharactersListViewController.swift */; };
@@ -30,7 +29,6 @@
 		B60784C9250E347B00E5A617 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		B6AECA23250941E5009675B5 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
-		B6AECA27250B825C009675B5 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchFooter.swift; path = BreakingBadBluePrint/SearchFooter.swift; sourceTree = SOURCE_ROOT; };
 		B6D8959B2509381C000A0E4C /* BreakingBadBluePrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadBluePrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D8959E2509381C000A0E4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D895A02509381C000A0E4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				B6D895BA25093CC0000A0E4C /* Model */,
 				B6D895B925093927000A0E4C /* CharacterDetail */,
 				B6D895B825093911000A0E4C /* CharactersList */,
-				B6AECA27250B825C009675B5 /* SearchFooter.swift */,
 				B60784C9250E347B00E5A617 /* Box.swift */,
 				B6D8959E2509381C000A0E4C /* AppDelegate.swift */,
 				B6AECA23250941E5009675B5 /* CharacterService.swift */,
@@ -259,7 +256,6 @@
 				B6D895B3250938CC000A0E4C /* CharacterDetailViewController.swift in Sources */,
 				B6AECA24250941E5009675B5 /* CharacterService.swift in Sources */,
 				B6D895B625093904000A0E4C /* CharacterTableViewCell.swift in Sources */,
-				B6AECA28250B825C009675B5 /* SearchFooter.swift in Sources */,
 				B6AECA26250A2794009675B5 /* CharacterListViewModel.swift in Sources */,
 				B6D895BC25093CCD000A0E4C /* Character.swift in Sources */,
 				B6D8959F2509381C000A0E4C /* AppDelegate.swift in Sources */,

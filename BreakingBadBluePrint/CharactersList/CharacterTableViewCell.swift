@@ -20,6 +20,6 @@ class CharacterTableViewCell: UITableViewCell {
     
     func setup(character: Character) {
         namelabel.text = character.name
-        characterImageView.sd_setImage(with: URL(string: character.img), placeholderImage: UIImage(systemName: "questionmark.diamond"))
+        characterImageView.sd_setImage(with: URL(string: character.imageUrl), placeholderImage: UIImage(systemName: "questionmark.diamond"))
     }
 }

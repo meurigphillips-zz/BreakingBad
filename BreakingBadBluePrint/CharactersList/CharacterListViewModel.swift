@@ -11,11 +11,21 @@ import Foundation
 class CharacterListViewModel {
     
     var characters = [Character]()
-    var displayedCharacters: Box<[Character]> = Box([])
-    var filteredSeasons = [Int]()
+    var filteredCharacters: Box<[Character]> = Box([])
     
     init() {
         fetchCharacters()
+    }
+    
+    func filterContentForSearchText(_ searchText: String, season: Int, isSearchBarEmpty: Bool) {
+        filteredCharacters.value = characters.filter { (character: Character) -> Bool in
+            let doesSeasonMatch = season == 0 || character.appearance.contains(season)
+            if isSearchBarEmpty {
+                return doesSeasonMatch
+            } else {
+                return doesSeasonMatch && character.name.lowercased().contains(searchText.lowercased())
+            }
+        }
     }
     
     private func fetchCharacters() {
@@ -24,7 +34,7 @@ class CharacterListViewModel {
                 let charactersData = charactersData else { return }
             
             self.characters = charactersData
-            self.displayedCharacters.value = self.characters
+            self.filteredCharacters.value = self.characters
         }
     }
 

@@ -37,10 +37,6 @@ class CharacterDetailViewController: UIViewController {
         statusLabel.text = "Status: \(character.status)"
         let seasons = character.appearance.map(String.init).joined(separator: ", ")
         seasonLabel.text = "Appears in season(s): \(seasons)"
-        imageView.sd_setImage(with: URL(string: character.img), placeholderImage: UIImage(systemName: "questionmark.diamond"))
+        imageView.sd_setImage(with: URL(string: character.imageUrl), placeholderImage: UIImage(systemName: "questionmark.diamond"))
     }
-    
-
-
-
 }
