@@ -6,5 +6,6 @@ target 'BreakingBadBluePrint' do
   use_frameworks!
 
   pod 'SDWebImage'
+  pod 'ReachabilitySwift'
 
 end

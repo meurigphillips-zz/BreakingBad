@@ -36,18 +36,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="eYG-tx-1Lw"/>
                                 </connections>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-Sn-6Qr">
+                                <rect key="frame" x="57" y="325" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Mma-8d-SxC"/>
+                                    <constraint firstAttribute="height" constant="300" id="osc-X0-akH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="hLw-mU-fE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3eU-6r-Ymm"/>
+                            <constraint firstItem="BBC-Sn-6Qr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oox-uC-cmY"/>
+                            <constraint firstItem="hLw-mU-fE5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QmV-h8-AdU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hLw-mU-fE5" secondAttribute="trailing" id="UvJ-i4-4G7"/>
+                            <constraint firstItem="hLw-mU-fE5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="XKg-VR-BSq"/>
                             <constraint firstItem="hLw-mU-fE5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h5J-ny-fh2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hLw-mU-fE5" secondAttribute="bottom" id="j9Z-9q-fwq"/>
+                            <constraint firstItem="BBC-Sn-6Qr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lF2-jN-1vC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="K9f-7B-EGw"/>
                     <connections>
+                        <outlet property="connectivityImageView" destination="BBC-Sn-6Qr" id="a6c-Mb-98A"/>
                         <outlet property="tableView" destination="hLw-mU-fE5" id="MVO-xn-Jlr"/>
                     </connections>
                 </viewController>

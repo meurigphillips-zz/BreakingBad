@@ -12,11 +12,7 @@ class CharacterListViewModel {
     
     var characters = [Character]()
     var filteredCharacters: Box<[Character]> = Box([])
-    
-    init() {
-        fetchCharacters()
-    }
-    
+        
     func filterContentForSearchText(_ searchText: String, season: Int, isSearchBarEmpty: Bool) {
         filteredCharacters.value = characters.filter { (character: Character) -> Bool in
             let doesSeasonMatch = season == 0 || character.appearance.contains(season)
@@ -28,7 +24,7 @@ class CharacterListViewModel {
         }
     }
     
-    private func fetchCharacters() {
+    func fetchCharacters() {
         CharacterService.getCharacters { [weak self] (charactersData, error) in
             guard let self = self,
                 let charactersData = charactersData else { return }

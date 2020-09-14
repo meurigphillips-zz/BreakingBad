@@ -7,30 +7,39 @@
 //
 
 import UIKit
+import Reachability
 
 class CharacterListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var connectivityImageView: UIImageView!
     
-    let searchController = UISearchController(searchResultsController: nil)
+    private let reachability = try! Reachability()
+    private let searchController = UISearchController(searchResultsController: nil)
     private let viewModel = CharacterListViewModel()
     
-    var isSearchBarEmpty: Bool { searchController.searchBar.text?.isEmpty ?? true }
-        
+    private var isSearchBarEmpty: Bool { searchController.searchBar.text?.isEmpty ?? true }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "CharacterTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        configureSearchController()
         
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Characters"
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
-        searchController.searchBar.scopeButtonTitles = ["All","1","2","3","4","5"]
-        searchController.searchBar.delegate = self
-                
-        viewModel.filteredCharacters.bind { [weak self] characters in
+        connectivityImageView.image = UIImage(systemName: "wifi.exclamationmark")
+        
+        viewModel.filteredCharacters.bind { [weak self] _ in
             self?.tableView.reloadData()
+        }
+        
+        reachability.whenReachable = { _ in
+            self.connectivityImageView.isHidden = true
+            self.viewModel.fetchCharacters()
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
         }
     }
     
@@ -44,8 +53,20 @@ class CharacterListViewController: UIViewController {
         }
         detailViewController.character = viewModel.filteredCharacters.value[indexPathRow]
     }
+    
+    private func configureSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Characters"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        searchController.searchBar.scopeButtonTitles = ["All","1","2","3","4","5"]
+        searchController.searchBar.delegate = self
+        
+    }
 }
 
+// TableView
 extension CharacterListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.filteredCharacters.value.count
@@ -63,6 +84,7 @@ extension CharacterListViewController: UITableViewDataSource, UITableViewDelegat
     }
 }
 
+// Searchbar
 extension CharacterListViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar

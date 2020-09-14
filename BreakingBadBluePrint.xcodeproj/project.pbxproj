@@ -21,7 +21,20 @@
 		B6D895B625093904000A0E4C /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D895B425093904000A0E4C /* CharacterTableViewCell.swift */; };
 		B6D895B725093904000A0E4C /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D895B525093904000A0E4C /* CharacterTableViewCell.xib */; };
 		B6D895BC25093CCD000A0E4C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D895BB25093CCD000A0E4C /* Character.swift */; };
+		B6E59DAB250EB78200041979 /* BreakingBadBluePrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E59DAA250EB78200041979 /* BreakingBadBluePrintTests.swift */; };
+		B6E59DB3250EB7C800041979 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E59DB2250EB7C800041979 /* DataLoader.swift */; };
+		B6E59DB5250EB80200041979 /* CharactersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B6E59DB4250EB80200041979 /* CharactersResponse.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6E59DAD250EB78200041979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D895932509381C000A0E4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D8959A2509381C000A0E4C;
+			remoteInfo = BreakingBadBluePrint;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadBluePrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +54,11 @@
 		B6D895B425093904000A0E4C /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		B6D895B525093904000A0E4C /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		B6D895BB25093CCD000A0E4C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		B6E59DA8250EB78200041979 /* BreakingBadBluePrintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakingBadBluePrintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E59DAA250EB78200041979 /* BreakingBadBluePrintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadBluePrintTests.swift; sourceTree = "<group>"; };
+		B6E59DAC250EB78200041979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E59DB2250EB7C800041979 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		B6E59DB4250EB80200041979 /* CharactersResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharactersResponse.json; sourceTree = "<group>"; };
 		B80BB3F398B0880942864844 /* Pods-BreakingBadBluePrint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadBluePrint.release.xcconfig"; path = "Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +68,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA313A77FED557C0354DB03 /* Pods_BreakingBadBluePrint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E59DA5250EB78200041979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,10 +98,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B687ADB4250EC474008CFDE7 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				B60784C9250E347B00E5A617 /* Box.swift */,
+			);
+			path = Utilties;
+			sourceTree = "<group>";
+		};
+		B687ADB5250EC494008CFDE7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B6AECA23250941E5009675B5 /* CharacterService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		B6D895922509381C000A0E4C = {
 			isa = PBXGroup;
 			children = (
 				B6D8959D2509381C000A0E4C /* BreakingBadBluePrint */,
+				B6E59DA9250EB78200041979 /* BreakingBadBluePrintTests */,
 				B6D8959C2509381C000A0E4C /* Products */,
 				14BCE062467F5693E44A0C8E /* Pods */,
 				6B2DF000EEB4D7E39C654207 /* Frameworks */,
@@ -87,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B6D8959B2509381C000A0E4C /* BreakingBadBluePrint.app */,
+				B6E59DA8250EB78200041979 /* BreakingBadBluePrintTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +140,9 @@
 				B6D895BA25093CC0000A0E4C /* Model */,
 				B6D895B925093927000A0E4C /* CharacterDetail */,
 				B6D895B825093911000A0E4C /* CharactersList */,
-				B60784C9250E347B00E5A617 /* Box.swift */,
+				B687ADB4250EC474008CFDE7 /* Utilties */,
+				B687ADB5250EC494008CFDE7 /* Network */,
 				B6D8959E2509381C000A0E4C /* AppDelegate.swift */,
-				B6AECA23250941E5009675B5 /* CharacterService.swift */,
 				B6D895A02509381C000A0E4C /* SceneDelegate.swift */,
 				B6D895A42509381C000A0E4C /* Main.storyboard */,
 				B6D895A72509381E000A0E4C /* Assets.xcassets */,
@@ -136,6 +179,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B6E59DA9250EB78200041979 /* BreakingBadBluePrintTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6E59DAA250EB78200041979 /* BreakingBadBluePrintTests.swift */,
+				B6E59DAC250EB78200041979 /* Info.plist */,
+				B6E59DB2250EB7C800041979 /* DataLoader.swift */,
+				B6E59DB4250EB80200041979 /* CharactersResponse.json */,
+			);
+			path = BreakingBadBluePrintTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +212,24 @@
 			productReference = B6D8959B2509381C000A0E4C /* BreakingBadBluePrint.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B6E59DA7250EB78200041979 /* BreakingBadBluePrintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E59DB1250EB78200041979 /* Build configuration list for PBXNativeTarget "BreakingBadBluePrintTests" */;
+			buildPhases = (
+				B6E59DA4250EB78200041979 /* Sources */,
+				B6E59DA5250EB78200041979 /* Frameworks */,
+				B6E59DA6250EB78200041979 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E59DAE250EB78200041979 /* PBXTargetDependency */,
+			);
+			name = BreakingBadBluePrintTests;
+			productName = BreakingBadBluePrintTests;
+			productReference = B6E59DA8250EB78200041979 /* BreakingBadBluePrintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +242,10 @@
 				TargetAttributes = {
 					B6D8959A2509381C000A0E4C = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					B6E59DA7250EB78200041979 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B6D8959A2509381C000A0E4C;
 					};
 				};
 			};
@@ -187,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				B6D8959A2509381C000A0E4C /* BreakingBadBluePrint */,
+				B6E59DA7250EB78200041979 /* BreakingBadBluePrintTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +277,14 @@
 				B6D895A82509381E000A0E4C /* Assets.xcassets in Resources */,
 				B6D895A62509381C000A0E4C /* Main.storyboard in Resources */,
 				B6D895B725093904000A0E4C /* CharacterTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E59DA6250EB78200041979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E59DB5250EB80200041979 /* CharactersResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +349,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6E59DA4250EB78200041979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E59DB3250EB7C800041979 /* DataLoader.swift in Sources */,
+				B6E59DAB250EB78200041979 /* BreakingBadBluePrintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6E59DAE250EB78200041979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D8959A2509381C000A0E4C /* BreakingBadBluePrint */;
+			targetProxy = B6E59DAD250EB78200041979 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B6D895A42509381C000A0E4C /* Main.storyboard */ = {
@@ -438,6 +540,46 @@
 			};
 			name = Release;
 		};
+		B6E59DAF250EB78200041979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXHN8KXSGK;
+				INFOPLIST_FILE = BreakingBadBluePrintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Meurig.BreakingBadBluePrintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakingBadBluePrint.app/BreakingBadBluePrint";
+			};
+			name = Debug;
+		};
+		B6E59DB0250EB78200041979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXHN8KXSGK;
+				INFOPLIST_FILE = BreakingBadBluePrintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Meurig.BreakingBadBluePrintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakingBadBluePrint.app/BreakingBadBluePrint";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +597,15 @@
 			buildConfigurations = (
 				B6D895B02509381E000A0E4C /* Debug */,
 				B6D895B12509381E000A0E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E59DB1250EB78200041979 /* Build configuration list for PBXNativeTarget "BreakingBadBluePrintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E59DAF250EB78200041979 /* Debug */,
+				B6E59DB0250EB78200041979 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
