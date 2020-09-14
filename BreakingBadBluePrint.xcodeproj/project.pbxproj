@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3EA313A77FED557C0354DB03 /* Pods_BreakingBadBluePrint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */; };
 		B60784CA250E347B00E5A617 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60784C9250E347B00E5A617 /* Box.swift */; };
+		B60BACF0250F4E4400597DC8 /* BreakingBadBluePrintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60BACEF250F4E4400597DC8 /* BreakingBadBluePrintUITests.swift */; };
 		B6AECA24250941E5009675B5 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA23250941E5009675B5 /* CharacterService.swift */; };
 		B6AECA26250A2794009675B5 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */; };
 		B6D8959F2509381C000A0E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8959E2509381C000A0E4C /* AppDelegate.swift */; };
@@ -27,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B60BACF2250F4E4400597DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D895932509381C000A0E4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D8959A2509381C000A0E4C;
+			remoteInfo = BreakingBadBluePrint;
+		};
 		B6E59DAD250EB78200041979 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6D895932509381C000A0E4C /* Project object */;
@@ -40,6 +48,9 @@
 		410A2287891AD356DDAE1DE0 /* Pods_BreakingBadBluePrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadBluePrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518549247BCBB914F3C010F6 /* Pods-BreakingBadBluePrint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadBluePrint.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadBluePrint/Pods-BreakingBadBluePrint.debug.xcconfig"; sourceTree = "<group>"; };
 		B60784C9250E347B00E5A617 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		B60BACED250F4E4400597DC8 /* BreakingBadBluePrintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakingBadBluePrintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60BACEF250F4E4400597DC8 /* BreakingBadBluePrintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadBluePrintUITests.swift; sourceTree = "<group>"; };
+		B60BACF1250F4E4400597DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6AECA23250941E5009675B5 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		B6D8959B2509381C000A0E4C /* BreakingBadBluePrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadBluePrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B60BACEA250F4E4400597DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6D895982509381C000A0E4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,6 +116,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B60BACE8250F4DA100597DC8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B6D895B425093904000A0E4C /* CharacterTableViewCell.swift */,
+				B6D895B525093904000A0E4C /* CharacterTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B60BACEE250F4E4400597DC8 /* BreakingBadBluePrintUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B60BACEF250F4E4400597DC8 /* BreakingBadBluePrintUITests.swift */,
+				B60BACF1250F4E4400597DC8 /* Info.plist */,
+			);
+			path = BreakingBadBluePrintUITests;
+			sourceTree = "<group>";
+		};
 		B687ADB4250EC474008CFDE7 /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +155,7 @@
 			children = (
 				B6D8959D2509381C000A0E4C /* BreakingBadBluePrint */,
 				B6E59DA9250EB78200041979 /* BreakingBadBluePrintTests */,
+				B60BACEE250F4E4400597DC8 /* BreakingBadBluePrintUITests */,
 				B6D8959C2509381C000A0E4C /* Products */,
 				14BCE062467F5693E44A0C8E /* Pods */,
 				6B2DF000EEB4D7E39C654207 /* Frameworks */,
@@ -130,6 +167,7 @@
 			children = (
 				B6D8959B2509381C000A0E4C /* BreakingBadBluePrint.app */,
 				B6E59DA8250EB78200041979 /* BreakingBadBluePrintTests.xctest */,
+				B60BACED250F4E4400597DC8 /* BreakingBadBluePrintUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,9 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				B6D895A22509381C000A0E4C /* CharactersListViewController.swift */,
-				B6D895B425093904000A0E4C /* CharacterTableViewCell.swift */,
-				B6D895B525093904000A0E4C /* CharacterTableViewCell.xib */,
 				B6AECA25250A2794009675B5 /* CharacterListViewModel.swift */,
+				B60BACE8250F4DA100597DC8 /* Cell */,
 			);
 			path = CharactersList;
 			sourceTree = "<group>";
@@ -193,6 +230,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B60BACEC250F4E4400597DC8 /* BreakingBadBluePrintUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60BACF4250F4E4400597DC8 /* Build configuration list for PBXNativeTarget "BreakingBadBluePrintUITests" */;
+			buildPhases = (
+				B60BACE9250F4E4400597DC8 /* Sources */,
+				B60BACEA250F4E4400597DC8 /* Frameworks */,
+				B60BACEB250F4E4400597DC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B60BACF3250F4E4400597DC8 /* PBXTargetDependency */,
+			);
+			name = BreakingBadBluePrintUITests;
+			productName = BreakingBadBluePrintUITests;
+			productReference = B60BACED250F4E4400597DC8 /* BreakingBadBluePrintUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B6D8959A2509381C000A0E4C /* BreakingBadBluePrint */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6D895AF2509381E000A0E4C /* Build configuration list for PBXNativeTarget "BreakingBadBluePrint" */;
@@ -236,10 +291,14 @@
 		B6D895932509381C000A0E4C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Meurig Phillips";
 				TargetAttributes = {
+					B60BACEC250F4E4400597DC8 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = B6D8959A2509381C000A0E4C;
+					};
 					B6D8959A2509381C000A0E4C = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -264,11 +323,19 @@
 			targets = (
 				B6D8959A2509381C000A0E4C /* BreakingBadBluePrint */,
 				B6E59DA7250EB78200041979 /* BreakingBadBluePrintTests */,
+				B60BACEC250F4E4400597DC8 /* BreakingBadBluePrintUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B60BACEB250F4E4400597DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6D895992509381C000A0E4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +400,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B60BACE9250F4E4400597DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60BACF0250F4E4400597DC8 /* BreakingBadBluePrintUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6D895972509381C000A0E4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +436,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B60BACF3250F4E4400597DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D8959A2509381C000A0E4C /* BreakingBadBluePrint */;
+			targetProxy = B60BACF2250F4E4400597DC8 /* PBXContainerItemProxy */;
+		};
 		B6E59DAE250EB78200041979 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B6D8959A2509381C000A0E4C /* BreakingBadBluePrint */;
@@ -388,6 +468,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B60BACF5250F4E4400597DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXHN8KXSGK;
+				INFOPLIST_FILE = BreakingBadBluePrintUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Meurig.BreakingBadBluePrintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BreakingBadBluePrint;
+			};
+			name = Debug;
+		};
+		B60BACF6250F4E4400597DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXHN8KXSGK;
+				INFOPLIST_FILE = BreakingBadBluePrintUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Meurig.BreakingBadBluePrintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BreakingBadBluePrint;
+			};
+			name = Release;
+		};
 		B6D895AD2509381E000A0E4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -583,6 +703,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B60BACF4250F4E4400597DC8 /* Build configuration list for PBXNativeTarget "BreakingBadBluePrintUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60BACF5250F4E4400597DC8 /* Debug */,
+				B60BACF6250F4E4400597DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6D895962509381C000A0E4C /* Build configuration list for PBXProject "BreakingBadBluePrint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

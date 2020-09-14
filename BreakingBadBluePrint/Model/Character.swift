@@ -29,11 +29,3 @@ struct Character: Codable {
         case betterCallSaulAppearance = "better_call_saul_appearance"
     }
 }
-
-enum Season: String, CaseIterable {
-    case one = "One"
-    case two = "Two"
-    case three = "Three"
-    case four = "Four"
-    case five = "Five"
-}

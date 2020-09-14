@@ -17,6 +17,7 @@ final class Box<T> {
             listener?(value)
         }
     }
+    
     init(_ value: T) {
         self.value = value
     }
